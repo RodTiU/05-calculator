@@ -1,14 +1,32 @@
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 33vw;
+  height: 80vh;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  padding-right: 10px;
 }
 .result-display {
-  display: inline-flex;
-  /* justify-content: flex-end; */
+  font-size: larger;
+}
+.values-input {
+  font-size: medium;
 }
 .container .basic-buttons {
   display: flex;
@@ -17,7 +35,6 @@ body {
 .container .basic-buttons .input-numbers-operations {
   display: flex;
   flex-wrap: wrap-reverse;
-  width: 100px;
 }
 .container .basic-buttons .sidebar-right {
   display: flex;
@@ -25,8 +42,9 @@ body {
 }
 .container .bottom-options {
   display: flex;
-  width: 100px;
 }
 button {
-  width: 25px;
+  width: calc(33vw / 4);
+  height: calc(50vh / 4);
+  font-size: larger;
 }
