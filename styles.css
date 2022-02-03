@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.result-display {
+  display: inline-flex;
+  /* justify-content: flex-end; */
+}
+.container .basic-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.container .basic-buttons .input-numbers-operations {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100px;
+}
+.container .basic-buttons .sidebar-right {
+  display: flex;
+  flex-direction: column;
+}
+.container .bottom-options {
+  display: flex;
+  width: 100px;
+}
+button {
+  width: 25px;
+}
