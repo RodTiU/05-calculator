@@ -23,3 +23,11 @@ const operator = (operation, numbers) => {
     return divide(...numbers);
   }
 };
+
+// Dom interaction
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
+});

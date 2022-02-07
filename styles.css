@@ -8,43 +8,51 @@ body {
   margin: 0;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 33vw;
-  height: 80vh;
+  background-color: #2f2235;
+  padding: 10px;
+  border: solid 1px pink;
+  border-radius: 10px;
 }
 .results {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  padding-right: 10px;
+  background-color: #a9aca9;
+  color: #60495a;
+  border-radius: 5px;
+  margin: 10px;
 }
-.result-display {
+.display-result {
   font-size: larger;
 }
-.values-input {
-  font-size: medium;
+.display-values {
+  font-size: large;
 }
-.container .basic-buttons {
-  display: flex;
-  flex-direction: row;
+.display-result,
+.display-values {
+  text-align: end;
+  /* color: #a9aca9; */
+  padding: 10px;
 }
-.container .basic-buttons .input-numbers-operations {
+.input-numbers {
   display: flex;
-  flex-wrap: wrap-reverse;
+  gap: 10px;
 }
-.container .basic-buttons .sidebar-right {
+.input-numbers .main-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
-.container .bottom-options {
+.input-numbers .sidebar {
   display: flex;
+  flex-direction: column-reverse;
+}
+.input-numbers .main-buttons,
+.input-numbers .sidebar {
+  gap: 10px;
 }
 button {
-  width: calc(33vw / 4);
-  height: calc(50vh / 4);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: #9d6381;
+  color: #3f3244;
   font-size: larger;
 }
